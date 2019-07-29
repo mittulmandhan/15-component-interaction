@@ -1,0 +1,16 @@
+<!-- what we have seen so far is that test and app component been working independently -->
+<!-- In our case root component i.e. app component is parent and test component is the child of app component -->
+<!-- there will be some situations where we will require to make them interact with each other -->
+<!-- now we are going to make both(child and parent) interact with each other -->
+<!-- to make them both interact we will use @input() and @output() decorator -->
+<!-- using the @input() decorator child can accept input from parent -->
+<!-- and using the @output() decorator child will send out the events to the parent to indicate something -->
+<!-- Note:- refer notes as well -->
+<h2>
+    <!-- if using declaration for same name  -->
+    {{"Hello "+parentData}}
+
+    <!-- if using declaration for some other name  -->
+    <!-- {{"Hello "+name}} -->
+</h2>
+<button (click)="fireEvent()">send event</button>

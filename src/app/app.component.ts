@@ -1,3 +1,4 @@
+// parent of test component
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'component-interaction';
+  public name = 'Mittul';
+  public message = '';
 }
