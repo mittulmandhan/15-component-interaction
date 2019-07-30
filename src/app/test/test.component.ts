@@ -12,7 +12,7 @@ export class TestComponent implements OnInit {
   // if using same name
   @Input() public parentData;
 
-  // or if u want to use parentData property as some other name then use following declaration
+  // or if u want to use parentData property as alias then use following declaration
   // @input('parentData') public differentName;
 
   @Output() public childEvent = new EventEmitter();
